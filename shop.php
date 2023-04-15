@@ -1,6 +1,6 @@
 <?php   
     session_start();  
-    $connection_db = mysqli_connect("localhost", "root", "123456789", "newage_shop");  
+    $connection_db = mysqli_connect("localhost", "root", "", "newage_shop");  
     if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true){
         header('location: login');
         

@@ -1,7 +1,7 @@
 <?php  
  //action.php  
     session_start();  
-    $connection_db = mysqli_connect("localhost", "root", "123456789", "newage_shop");
+    $connection_db = mysqli_connect("localhost", "root", "", "newage_shop");
       
     if(isset($_POST["product_id"])) {  
         $order_table = '';  

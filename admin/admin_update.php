@@ -1,9 +1,9 @@
 <?php
-
-$conn = mysqli_connect('localhost', 'root', '123456789', 'newage_shop');
+session_start();
+$conn = mysqli_connect('localhost', 'root', '', 'newage_shop');
 
 if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true){
-   header('location: /SIGUENZA_ECOMMERCE/admin/index');
+   header('location: index');
    
    exit;
 }

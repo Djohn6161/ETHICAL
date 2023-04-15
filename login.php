@@ -13,6 +13,7 @@ session_start();
         $password = md5($_POST['password']);
     
         $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+        // echo $sql;
         $result = mysqli_query($connection_db, $sql);
         if ($result->num_rows > 0) {
             $row = mysqli_fetch_assoc($result);
